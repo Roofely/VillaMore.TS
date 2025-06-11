@@ -1,0 +1,133 @@
+<!DOCTYPE html>
+<html lang="fr">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>VillaMore - La plateforme immobilière marocaine</title>
+    <script src="https://cdn.tailwindcss.com"></script>
+    <style>
+      .shadow-gold {
+        box-shadow: 0 4px 20px rgba(255, 215, 0, 0.3);
+      }
+      .hover\\:text-gold:hover {
+        color: #FFD700;
+      }
+      .border-gold {
+        border-color: #FFD700;
+      }
+      .text-gold {
+        color: #FFD700;
+      }
+      .hover\\:bg-gold:hover {
+        background-color: #FFD700;
+      }
+    </style>
+  </head>
+
+  <body class="bg-black text-white font-sans">
+
+    <!-- Header -->
+    <header class="flex items-center justify-between px-6 py-4 border-b border-gray-800">
+      <div class="text-2xl font-bold text-gold">VillaMore</div>
+
+      <!-- Menu + Search -->
+      <div class="flex items-center gap-6">
+        <nav class="hidden md:flex gap-4 text-sm">
+          <a href="#" class="hover:text-gold">Propriétés</a>
+          <a href="#" class="hover:text-gold">Locations</a>
+          <a href="#" class="hover:text-gold">Ventes</a>
+          <a href="#" class="hover:text-gold">Contrats</a>
+          <a href="#" class="hover:text-gold">Sécurité</a>
+        </nav>
+        <input
+          type="text"
+          placeholder="Que cherchez-vous ?"
+          class="px-3 py-1 rounded-full text-black text-sm"
+        />
+      </div>
+
+      <!-- Auth Buttons -->
+      <div class="flex items-center gap-3 text-sm">
+        <button class="hover:text-gold">Connexion</button>
+        <button
+          class="border border-gold text-gold px-3 py-1 rounded hover:bg-gold hover:text-black transition"
+        >
+          S'inscrire comme Propriétaire
+        </button>
+        <select class="bg-black text-sm text-white border border-gray-600 rounded px-2">
+          <option value="fr">FR</option>
+          <option value="ar">AR</option>
+          <option value="en">EN</option>
+        </select>
+      </div>
+    </header>
+
+    <!-- Hero -->
+    <section class="text-center py-20 px-4 bg-gradient-to-b from-black to-gray-900">
+      <h1 class="text-4xl md:text-5xl font-bold mb-6 text-gold">La plateforme immobilière de demain</h1>
+      <p class="max-w-2xl mx-auto text-gray-300 mb-6">
+        VillaMore connecte les propriétaires, locataires, notaires et autorités
+        marocaines pour une gestion <strong>transparente, sécurisée</strong> et intelligente du
+        secteur immobilier.
+      </p>
+      <a
+        href="#"
+        class="bg-gold text-black px-6 py-2 rounded-full font-semibold hover:opacity-90 transition"
+        >Demander une licence institutionnelle</a
+      >
+    </section>
+
+    <!-- Section 3D -->
+    <section class="py-16 px-4">
+      <h2 class="text-2xl text-center font-bold text-gold mb-10">Explorez les propriétés en 3D</h2>
+      <div class="grid md:grid-cols-3 gap-8 max-w-6xl mx-auto">
+        <div class="bg-gray-900 rounded-xl shadow-gold p-4">
+          <div class="bg-black h-48 flex items-center justify-center text-gray-600 text-sm italic">
+            [Espace pour affichage 360° - Maison 1]
+          </div>
+          <p class="mt-4">Visite virtuelle d’une villa moderne avec jardin</p>
+        </div>
+        <div class="bg-gray-900 rounded-xl shadow-gold p-4">
+          <div class="bg-black h-48 flex items-center justify-center text-gray-600 text-sm italic">
+            [Espace pour affichage 3D - Appartement 2]
+          </div>
+          <p class="mt-4">Appartement urbain en plein centre de Rabat</p>
+        </div>
+        <div class="bg-gray-900 rounded-xl shadow-gold p-4">
+          <div class="bg-black h-48 flex items-center justify-center text-gray-600 text-sm italic">
+            [Espace pour affichage 360° - Maison 3]
+          </div>
+          <p class="mt-4">Maison traditionnelle rénovée avec charme</p>
+        </div>
+      </div>
+    </section>
+
+    <!-- Section Légale -->
+    <section class="bg-gray-950 py-16 px-4">
+      <h2 class="text-2xl text-center font-bold text-gold mb-10">Une plateforme pensée pour la légalité</h2>
+      <div class="max-w-5xl mx-auto grid md:grid-cols-2 gap-8 text-sm text-gray-300">
+        <div>
+          <h3 class="text-gold font-semibold mb-2">✔ Vérification des titres fonciers</h3>
+          <p>Connexion avec l’ANCFCC pour vérifier le statut légal des propriétés, détecter les hypothèques ou litiges.</p>
+        </div>
+        <div>
+          <h3 class="text-gold font-semibold mb-2">✔ Identification sécurisée</h3>
+          <p>Connexion avec la DGSN ou plateformes ONI pour vérifier la CIN et prévenir l’usurpation d’identité.</p>
+        </div>
+        <div>
+          <h3 class="text-gold font-semibold mb-2">✔ Contrats avec signature électronique</h3>
+          <p>Utilisation de Barid eSign ou TPM Maroc pour signer des actes de vente et de location 100% légaux.</p>
+        </div>
+        <div>
+          <h3 class="text-gold font-semibold mb-2">✔ Intégration avec les administrations</h3>
+          <p>Demandes de certificats, prises de RDV, ou accès aux données des communes, via “Chikaya.ma” et “Services publics”.</p>
+        </div>
+      </div>
+    </section>
+
+    <!-- Footer -->
+    <footer class="text-center py-6 text-gray-500 text-sm border-t border-gray-800">
+      © 2025 VillaMore. Tous droits réservés.
+    </footer>
+  </body>
+</html>
