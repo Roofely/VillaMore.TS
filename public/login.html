@@ -1,0 +1,72 @@
+<!DOCTYPE html>
+<html lang="fr" dir="ltr">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <title>Connexion - VillaMore</title>
+    <script src="https://cdn.tailwindcss.com"></script>
+    <style>
+      .shadow-gold {
+        box-shadow: 0 8px 30px rgba(255, 215, 0, 0.3);
+      }
+      .text-gold {
+        color: #FFD700;
+      }
+      .bg-gold {
+        background-color: #FFD700;
+      }
+      .hover\:bg-gold:hover {
+        background-color: #FFD700;
+      }
+      .hover\:text-gold:hover {
+        color: #FFD700;
+      }
+      .border-gold {
+        border-color: #FFD700;
+      }
+    </style>
+  </head>
+  <body class="bg-black text-white font-sans flex flex-col min-h-screen">
+
+    <!-- Navbar -->
+    <header class="flex items-center justify-between px-6 py-4 shadow-md border-b border-gray-800">
+      <div class="text-3xl font-extrabold text-gold tracking-wide cursor-pointer" onclick="window.location.href='index.html'">VillaMore</div>
+      <nav class="hidden md:flex gap-6 text-sm">
+        <a href="index.html" class="hover:text-gold">Accueil</a>
+        <a href="#" class="hover:text-gold">Explorer</a>
+        <a href="#" class="hover:text-gold">Publier</a>
+        <a href="#" class="hover:text-gold">Favoris</a>
+        <a href="#" class="hover:text-gold">Messages</a>
+      </nav>
+      <div class="flex items-center gap-3">
+        <a href="login.html" class="text-sm hover:text-gold font-semibold">Connexion</a>
+        <button class="text-sm border border-gold text-gold px-3 py-1 rounded hover:bg-gold hover:text-black transition">
+          Devenir Propriétaire
+        </button>
+      </div>
+    </header>
+
+    <!-- Login Form Section -->
+    <main class="flex-grow flex items-center justify-center px-4">
+      <form class="bg-gray-900 p-8 rounded-xl shadow-gold w-full max-w-sm" onsubmit="event.preventDefault(); alert('Connexion en cours...');">
+        <h2 class="text-2xl font-bold text-gold mb-6 text-center">Connexion à VillaMore</h2>
+        
+        <label for="username" class="block mb-2 text-gray-300 font-semibold">Nom d'utilisateur</label>
+        <input type="text" id="username" name="username" required
+          class="w-full px-4 py-2 rounded bg-black border border-gray-700 focus:border-gold focus:outline-none mb-4 text-white" />
+        
+        <label for="password" class="block mb-2 text-gray-300 font-semibold">Mot de passe</label>
+        <input type="password" id="password" name="password" required
+          class="w-full px-4 py-2 rounded bg-black border border-gray-700 focus:border-gold focus:outline-none mb-6 text-white" />
+        
+        <button type="submit" class="w-full bg-gold text-black font-semibold py-2 rounded hover:opacity-90 transition">
+          Se connecter
+        </button>
+      </form>
+    </main>
+
+    <footer class="text-center py-6 text-gray-500 text-sm border-t border-gray-800">
+      © 2025 VillaMore. Tous droits réservés.
+    </footer>
+  </body>
+</html>

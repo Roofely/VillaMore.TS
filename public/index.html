@@ -1,131 +1,115 @@
 <!DOCTYPE html>
-<html lang="fr">
+<html lang="fr" dir="ltr">
   <head>
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>VillaMore - La plateforme immobilière marocaine</title>
+    <title>VillaMore</title>
     <script src="https://cdn.tailwindcss.com"></script>
     <style>
       .shadow-gold {
-        box-shadow: 0 4px 20px rgba(255, 215, 0, 0.3);
+        box-shadow: 0 8px 30px rgba(255, 215, 0, 0.3);
       }
-      .hover\\:text-gold:hover {
+      .text-gold {
+        color: #FFD700;
+      }
+      .bg-gold {
+        background-color: #FFD700;
+      }
+      .hover\:bg-gold:hover {
+        background-color: #FFD700;
+      }
+      .hover\:text-gold:hover {
         color: #FFD700;
       }
       .border-gold {
         border-color: #FFD700;
       }
-      .text-gold {
-        color: #FFD700;
-      }
-      .hover\\:bg-gold:hover {
-        background-color: #FFD700;
-      }
     </style>
   </head>
-
   <body class="bg-black text-white font-sans">
-
-    <!-- Header -->
-    <header class="flex items-center justify-between px-6 py-4 border-b border-gray-800">
-      <div class="text-2xl font-bold text-gold">VillaMore</div>
-
-      <!-- Menu + Search -->
-      <div class="flex items-center gap-6">
-        <nav class="hidden md:flex gap-4 text-sm">
-          <a href="#" class="hover:text-gold">Propriétés</a>
-          <a href="#" class="hover:text-gold">Locations</a>
-          <a href="#" class="hover:text-gold">Ventes</a>
-          <a href="#" class="hover:text-gold">Contrats</a>
-          <a href="#" class="hover:text-gold">Sécurité</a>
-        </nav>
-        <input
-          type="text"
-          placeholder="Que cherchez-vous ?"
-          class="px-3 py-1 rounded-full text-black text-sm"
-        />
-      </div>
-
-      <!-- Auth Buttons -->
-      <div class="flex items-center gap-3 text-sm">
-        <button class="hover:text-gold">Connexion</button>
-        <button
-          class="border border-gold text-gold px-3 py-1 rounded hover:bg-gold hover:text-black transition"
-        >
-          S'inscrire comme Propriétaire
+    <!-- Navbar -->
+    <header class="flex items-center justify-between px-6 py-4 shadow-md border-b border-gray-800">
+      <div class="text-3xl font-extrabold text-gold tracking-wide">VillaMore</div>
+      <nav class="hidden md:flex gap-6 text-sm">
+        <a href="#" class="hover:text-gold">Accueil</a>
+        <a href="#" class="hover:text-gold">Explorer</a>
+        <a href="#" class="hover:text-gold">Publier</a>
+        <a href="#" class="hover:text-gold">Favoris</a>
+        <a href="#" class="hover:text-gold">Messages</a>
+      </nav>
+      <div class="flex items-center gap-3">
+        <!-- هنا الرابط المضاف -->
+        <a href="login.html" class="text-sm hover:text-gold">Connexion</a>
+        <button class="text-sm border border-gold text-gold px-3 py-1 rounded hover:bg-gold hover:text-black transition">
+          Devenir Propriétaire
         </button>
-        <select class="bg-black text-sm text-white border border-gray-600 rounded px-2">
-          <option value="fr">FR</option>
-          <option value="ar">AR</option>
-          <option value="en">EN</option>
-        </select>
       </div>
     </header>
 
-    <!-- Hero -->
-    <section class="text-center py-20 px-4 bg-gradient-to-b from-black to-gray-900">
-      <h1 class="text-4xl md:text-5xl font-bold mb-6 text-gold">La plateforme immobilière de demain</h1>
-      <p class="max-w-2xl mx-auto text-gray-300 mb-6">
-        VillaMore connecte les propriétaires, locataires, notaires et autorités
-        marocaines pour une gestion <strong>transparente, sécurisée</strong> et intelligente du
-        secteur immobilier.
-      </p>
-      <a
-        href="#"
-        class="bg-gold text-black px-6 py-2 rounded-full font-semibold hover:opacity-90 transition"
-        >Demander une licence institutionnelle</a
-      >
+    <!-- Hero Section -->
+    <section class="relative h-[85vh] bg-gradient-to-br from-black via-gray-900 to-black flex items-center justify-center text-center">
+      <div class="z-10 px-4">
+        <h1 class="text-5xl md:text-6xl font-extrabold text-gold drop-shadow-xl">Bienvenue sur VillaMore</h1>
+        <p class="mt-6 text-gray-300 text-lg max-w-xl mx-auto">
+          Découvrez, explorez et vivez l'immobilier autrement avec des visites immersives, des outils intelligents et une expérience fluide.
+        </p>
+        <div class="mt-8 flex justify-center gap-4">
+          <button class="bg-gold text-black font-semibold px-6 py-2 rounded hover:opacity-90 transition">Commencer</button>
+          <button class="border border-gray-600 text-white px-6 py-2 rounded hover:border-gold hover:text-gold transition">Découvrir</button>
+        </div>
+      </div>
+      <div class="absolute inset-0 bg-[url('/images/hero-3d.jpg')] bg-cover bg-center opacity-20 blur-sm"></div>
     </section>
 
-    <!-- Section 3D -->
-    <section class="py-16 px-4">
-      <h2 class="text-2xl text-center font-bold text-gold mb-10">Explorez les propriétés en 3D</h2>
+    <!-- باقي المحتوى كما هو -->
+
+    <section class="py-20 px-6 bg-black">
+      <h2 class="text-3xl font-bold text-center text-gold mb-12">Expérience immersive</h2>
       <div class="grid md:grid-cols-3 gap-8 max-w-6xl mx-auto">
-        <div class="bg-gray-900 rounded-xl shadow-gold p-4">
-          <div class="bg-black h-48 flex items-center justify-center text-gray-600 text-sm italic">
-            [Espace pour affichage 360° - Maison 1]
+        <div class="bg-gray-900 rounded-xl overflow-hidden shadow-gold hover:scale-[1.02] transition">
+          <img src="/images/villa-3d-1.jpg" alt="Villa 3D" class="w-full h-60 object-cover" />
+          <div class="p-4">
+            <h3 class="text-lg font-semibold text-white">Villa moderne avec piscine</h3>
+            <p class="text-sm text-gray-400">Visite 360° incluse - 4 chambres, Marrakech</p>
           </div>
-          <p class="mt-4">Visite virtuelle d’une villa moderne avec jardin</p>
         </div>
-        <div class="bg-gray-900 rounded-xl shadow-gold p-4">
-          <div class="bg-black h-48 flex items-center justify-center text-gray-600 text-sm italic">
-            [Espace pour affichage 3D - Appartement 2]
+        <div class="bg-gray-900 rounded-xl overflow-hidden shadow-gold hover:scale-[1.02] transition">
+          <img src="/images/apartment-3d.jpg" alt="Appartement 3D" class="w-full h-60 object-cover" />
+          <div class="p-4">
+            <h3 class="text-lg font-semibold text-white">Appartement urbain</h3>
+            <p class="text-sm text-gray-400">Vue 3D - Rabat Agdal</p>
           </div>
-          <p class="mt-4">Appartement urbain en plein centre de Rabat</p>
         </div>
-        <div class="bg-gray-900 rounded-xl shadow-gold p-4">
-          <div class="bg-black h-48 flex items-center justify-center text-gray-600 text-sm italic">
-            [Espace pour affichage 360° - Maison 3]
+        <div class="bg-gray-900 rounded-xl overflow-hidden shadow-gold hover:scale-[1.02] transition">
+          <img src="/images/riad-3d.jpg" alt="Riad" class="w-full h-60 object-cover" />
+          <div class="p-4">
+            <h3 class="text-lg font-semibold text-white">Riad traditionnel rénové</h3>
+            <p class="text-sm text-gray-400">Casablanca - Médina</p>
           </div>
-          <p class="mt-4">Maison traditionnelle rénovée avec charme</p>
         </div>
       </div>
     </section>
 
-    <!-- Section Légale -->
-    <section class="bg-gray-950 py-16 px-4">
-      <h2 class="text-2xl text-center font-bold text-gold mb-10">Une plateforme pensée pour la légalité</h2>
-      <div class="max-w-5xl mx-auto grid md:grid-cols-2 gap-8 text-sm text-gray-300">
-        <div>
-          <h3 class="text-gold font-semibold mb-2">✔ Vérification des titres fonciers</h3>
-          <p>Connexion avec l’ANCFCC pour vérifier le statut légal des propriétés, détecter les hypothèques ou litiges.</p>
-        </div>
-        <div>
-          <h3 class="text-gold font-semibold mb-2">✔ Identification sécurisée</h3>
-          <p>Connexion avec la DGSN ou plateformes ONI pour vérifier la CIN et prévenir l’usurpation d’identité.</p>
-        </div>
-        <div>
-          <h3 class="text-gold font-semibold mb-2">✔ Contrats avec signature électronique</h3>
-          <p>Utilisation de Barid eSign ou TPM Maroc pour signer des actes de vente et de location 100% légaux.</p>
-        </div>
-        <div>
-          <h3 class="text-gold font-semibold mb-2">✔ Intégration avec les administrations</h3>
-          <p>Demandes de certificats, prises de RDV, ou accès aux données des communes, via “Chikaya.ma” et “Services publics”.</p>
-        </div>
+    <section class="bg-gray-950 py-20 px-6">
+      <h2 class="text-3xl font-bold text-center text-gold mb-12">Fonctionnalités intelligentes</h2>
+      <div class="grid md:grid-cols-2 gap-8 max-w-5xl mx-auto text-gray-300 text-sm">
+        <ul class="space-y-4">
+          <li>🎤 Recherche vocale intelligente</li>
+          <li>📍 Suggestions basées sur la géolocalisation</li>
+          <li>🎥 Visites vidéo + 360° pour chaque bien</li>
+          <li>🧾 Génération automatique de contrats</li>
+          <li>💡 Calculs de coûts en temps réel</li>
+        </ul>
+        <ul class="space-y-4">
+          <li>🔔 Alertes de publication dans vos quartiers favoris</li>
+          <li>🤝 Trouver un colocataire</li>
+          <li>📅 Planification automatique des visites</li>
+          <li>🤖 Chatbot pour assistance immobilière</li>
+          <li>🔐 Espace sécurisé pour la gestion de vos données</li>
+        </ul>
       </div>
     </section>
 
-    <!-- Footer -->
     <footer class="text-center py-6 text-gray-500 text-sm border-t border-gray-800">
       © 2025 VillaMore. Tous droits réservés.
     </footer>
